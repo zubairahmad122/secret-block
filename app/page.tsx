@@ -35,7 +35,7 @@ const page = () => {
           <div className="hero-right flex-1 flex justify-center items-center ">
             <div className="bg-[#151E25DE]  backdrop-blur-lg gr-border w-full sm:w-[509px] h-[447px] py-[41px]">
               {/* upper  */}
-              <div className="pl-[41px] inset-0 relative pr-[37px] flex items-center justify-between">
+              <div className=" pl-[15px] xsm:pl-[41px] inset-0 relative first-letter: pr-[15px] xsm:pr-[37px] flex items-center justify-between">
                 <Image
                   src="/logo.svg"
                   width={175}
@@ -51,10 +51,10 @@ const page = () => {
 
               {/* bottom  */}
 
-              <div className="px-[37px] inset-0 relativej mt-[35px]">
+              <div className="px-[15px] xsm:px-[37px] inset-0 relativej mt-[35px]">
                 {/* you send   */}
                 <div className="flex items-center gap-[6px]">
-                  <div className="flex-1 sm:w-[257px] flex items-center justify-between py-5 px-[30px] rounded-[10px] h-[64px] bg-[#00000036]">
+                  <div className="flex-1 sm:w-[257px] flex items-center justify-between py-5 px-2 sm:px-[30px]  rounded-[10px] h-[64px] bg-[#00000036]">
                     <p className="text-[#FFFFFF6E] smm-text">You send</p>
 
                     <input
@@ -103,14 +103,15 @@ const page = () => {
 
                 {/* you get   */}
                 <div className="flex items-center gap-[6px]">
-                  <div className="flex-1 sm:w-[257px] flex items-center justify-between py-5 px-[30px] rounded-[10px] h-[64px] bg-[#00000036]">
-                    <p className="text-[#FFFFFF6E] smm-text">You get</p>
+
+                <div className="flex-1 sm:w-[257px] flex items-center justify-between py-5 px-2 sm:px-[30px] rounded-[10px] h-[64px] bg-[#00000036] gap-[24px]">
+                    <p className="text-[#FFFFFF6E] w-[55px] smm-text">You got</p>
 
                     <input
                       type="text"
-                      className="text-white smm-text border-none outline-none bg-transparent w-[116px]"
+                      className="text-white smm-text border-none outline-none bg-transparent w-[94px] sm:w-[109px]"
                       name=""
-                      value={"=0.0000000000"}
+                      value={"=0.0000000000 "}
                       id=""
                     />
                   </div>
@@ -133,7 +134,7 @@ const page = () => {
                 </div>
                 {/* you get   */}
 
-                <button className="w-full py-4 px-[53px] rounded-[50px] sec-normal-text mt-[43px] exhbtn">
+                <button className="w-full py-4 px-1 xsm:px-[53px] rounded-[50px] sec-normal-text mt-[43px] exhbtn">
                   Exchange
                 </button>
               </div>
