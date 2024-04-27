@@ -181,12 +181,12 @@ const page = () => {
 
 
       {/* logos section  */}
-      <section className="logos-sec relative z-10 my-20 ">
+      <section style={{overflowX:"scroll"}} className="logos-sec no-scrollbar min-w-[300px] overflow-x-scroll  relative z-10 my-20 ">
         
-          <div className="logos-bg h-full absolute top-0 left-0 w-full z-0">
+          <div className="logos-bg h-full absolute  top-0 left-0 w-full z-0">
 
           </div>
-        <div className="relative z-20  max-w-[1440px] overflow-x-scroll  h-[139px] mx-auto px-5 md:px-[70px] lg::px-[100px] xll::px-[128px] flex items-start py-1 sm:items-center justify-center no-scrollbar gap-10 sm:gap-[148px]">
+        <div className="relative z-20  min-w-[900px] sm:min-w-[1050px]   max-w-[1440px] overflow-x-scroll  h-[139px] mx-auto px-5 md:px-[70px] lg::px-[100px] xll::px-[128px] flex items-start py-1 sm:items-center justify-center no-scrollbar gap-10 sm:gap-24 xll:gap-[148px]">
           <Image src='/logos/solana.svg' width={210} height={31} alt="Solona logo" />
           <Image src='/logos/polygon.svg' width={172} height={39} alt="Solona logo" />
           <Image src='/logos/ethereum.svg' width={189} height={48} alt="Solona logo" />
