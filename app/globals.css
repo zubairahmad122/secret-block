@@ -135,9 +135,9 @@ margin-top: 31px;
 @media screen and (max-width:1200px) {
   .hero-img{
     
-    width: 100%;
+    width: 130%;
     background-position: top center;
-    right: -130px;
+    right: -160px;
     
   }
 

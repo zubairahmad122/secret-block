@@ -109,7 +109,7 @@ const page = () => {
 
                     <input
                       type="text"
-                      className="text-white smm-text border-none outline-none bg-transparent w-[94px] sm:w-[109px]"
+                      className="text-white smm-text border-none outline-none bg-transparent  w-[94px] sm:w-[109px]"
                       name=""
                       value={"=0.0000000000 "}
                       id=""
