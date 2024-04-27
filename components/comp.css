@@ -1,0 +1,13 @@
+
+
+.sm-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    line-height: 21px;
+    transition: color 0.4s ease;
+}
+.sm-text:hover{
+    color: #decece;
+}
+
