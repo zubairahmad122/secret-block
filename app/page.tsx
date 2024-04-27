@@ -139,15 +139,15 @@ const page = () => {
               </div>
             </div>
           </div>
+        </div>
 
           <Image
             src="/images/grlightleft.png"
             width={400}
             height={400}
             alt="btc icon"
-            className="absolute bottom-[-250px] left-0"
+            className="absolute bottom-[-50px] left-0"
           />
-        </div>
       </section>
 
       {/* cards section  */}
