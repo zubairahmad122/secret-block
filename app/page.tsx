@@ -271,7 +271,7 @@ const page = () => {
               </div>
 
               <div className="right w-[450px] my xsm:w-full lg:w-[640px] xl:flex-1 h-[300px] xsm:h-[450px] lg:h-[388px] relative">
-                <Image src='/images/tala.png' width={700} height={700} alt="loacker image" className="w-full h-full z-[-2] absolute max-lg:object-[69%] object-center top-0 left-[-10px] lg:left- object-cover" />
+                <Image src='/images/tala.png' width={700} height={700} alt="loacker image" className="w-full h-full z-[-2] absolute max-lg:object-[76%] object-center top-0 left-[-10px] lg:left- object-cover" />
               </div>
 
             </div>

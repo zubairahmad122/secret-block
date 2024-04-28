@@ -1,161 +1,179 @@
-
-
-.sm-text{
-    font-size: 14px;
-    font-weight: 500;
-    color: white;
-    line-height: 21px;
-    transition: color 0.4s ease;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.sm-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  line-height: 21px;
+  transition: color 0.4s ease;
 }
-.sm-text:hover{
-    color: #decece;
-}
-
-
-
-
-.market-card{
-    position: relative;
-    border-radius: 20px; 
+.sm-text:hover {
+  color: #decece;
 }
 
-@media screen and (max-width:1024px) {
+.market-card {
+  position: relative;
+  border-radius: 20px;
+}
 
-
-
-.market-card::before{
+@media screen and (max-width: 1024px) {
+  .market-card::before {
     content: "";
     position: absolute;
     inset: 0;
     height: 100%;
     padding: 2px;
-    
-    border-radius: 20px; 
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.228) 0%, rgba(255, 255, 255, 0.152) 29.9%, rgba(255, 255, 255, 0.124) 57.9%, rgba(255, 255, 255, 0) 100%);
 
-    
-    -webkit-mask: 
-       linear-gradient(#fff 0 0) content-box, 
-       linear-gradient(#fff 0 0);
+    border-radius: 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.228) 0%,
+      rgba(255, 255, 255, 0.152) 29.9%,
+      rgba(255, 255, 255, 0.124) 57.9%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude; 
+    mask-composite: exclude;
   }
-.market-Grad-card{
+  .market-Grad-card {
     position: relative;
-    border-radius: 20px; 
-
-}
-.market-Grad-card::before{
+    border-radius: 20px;
+  }
+  .market-Grad-card::before {
     content: "";
     position: absolute;
     inset: 0;
     height: 100%;
     padding: 2px;
-    border-radius: 20px; 
-    background: linear-gradient(115.9deg, rgba(5, 55, 75, 0.3) 1.29%, rgba(149, 220, 248, 0.3) 46.96%, rgba(2, 58, 81, 0.3) 94.49%);
+    border-radius: 20px;
+    background: linear-gradient(
+      115.9deg,
+      rgba(5, 55, 75, 0.3) 1.29%,
+      rgba(149, 220, 248, 0.3) 46.96%,
+      rgba(2, 58, 81, 0.3) 94.49%
+    );
 
-
-    
-    -webkit-mask: 
-       linear-gradient(#fff 0 0) content-box, 
-       linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude; 
+    mask-composite: exclude;
   }
 
-  .market-chil1{
+  .market-chil1 {
     box-shadow: 5px 0px 4px 0px #00000066;
     position: relative;
     padding-right: 50px;
-    
   }
-  .market-chil1::before{
+  .market-chil1::before {
     content: "";
     position: absolute;
     inset: 0;
     height: 100%;
     padding: 0 2px 0 0;
-    background: linear-gradient(115.9deg, rgba(5, 55, 75, 0.3) 1.29%, rgba(149, 220, 248, 0.3) 46.96%, rgba(2, 58, 81, 0.3) 94.49%);    
-    -webkit-mask: 
-       linear-gradient(#fff 0 0) content-box, 
-       linear-gradient(#fff 0 0);
+    background: linear-gradient(
+      115.9deg,
+      rgba(5, 55, 75, 0.3) 1.29%,
+      rgba(149, 220, 248, 0.3) 46.96%,
+      rgba(2, 58, 81, 0.3) 94.49%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude; 
+    mask-composite: exclude;
   }
-  
-  
-  .market-gr-chil1{
-      box-shadow: 5px 0px 4px 0px #000000;
-      position: relative;
-      padding-right: 50px;
-      
-    }
-    .market-gr-chil1::before{
-      content: "";
-      position: absolute;
-      inset: 0;
-      height: 100%;
-      padding: 0 1px 0 0;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.228) 0%, rgba(255, 255, 255, 0.152) 29.9%, rgba(255, 255, 255, 0.124) 57.9%, rgba(255, 255, 255, 0) 100%);
-      -webkit-mask: 
-         linear-gradient(#fff 0 0) content-box, 
-         linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-              mask-composite: exclude; 
-            }
-            
-          }       
-            
-            
-            /* ------ col stepper  */
-            
-            .col-stepper{
-              position: relative;
-              min-height: 1241px;
-            }
-    .col-stepper::before{
-      content: '';
-      position: absolute;
-      top: 80px;
-      left: 0;
-      height: 100%;
-      background-image: url('/images/Line.png');
-      width: 2px;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-    
-   
-    @media screen and (max-width:640px) {
-      .col-stepper::before{
-        left: -10px;
-        top: 50px;
-      }
-      
-    }
 
+  .market-gr-chil1 {
+    box-shadow: 5px 0px 4px 0px #000000;
+    position: relative;
+    padding-right: 50px;
+  }
+  .market-gr-chil1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    padding: 0 1px 0 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.228) 0%,
+      rgba(255, 255, 255, 0.152) 29.9%,
+      rgba(255, 255, 255, 0.124) 57.9%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}
 
-    .step-ac{
-      background: linear-gradient(93.75deg, #84ADFF 38.23%, #2169F5 95.29%);
-      -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+/* ------ col stepper  */
 
-    }
- 
+.col-stepper {
+  position: relative;
+  min-height: 1241px;
+}
+.col-stepper::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: calc(100% -250px);
+  background-image: url("/images/Line.png");
+  width: 2px;
+  background-repeat: repeat-y;
+  bottom: 120px;
+  background-size: contain;
+}
 
-    .step-num::before{
-      content: "";
-      position: absolute;
-      inset: 0;
-      height: 100%;
-      padding: 2px;
-      background: linear-gradient(115.9deg, #05374B 1.29%, #95DCF8 46.96%, #023A51 94.49%);
-      border-radius: 50%;
-      -webkit-mask: 
-         linear-gradient(#fff 0 0) content-box, 
-         linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-              mask-composite: exclude; 
-            }
+@media screen and (max-width: 640px) {
+  .col-stepper::before {
+    left: -10px;
+    top: 50px;
+    bottom: 280px;
+  }
+}
 
-            
+@media screen and (max-width: 560px) {
+  .col-stepper::before {
+    left: -10px;
+    top: 50px;
+    bottom: 120px;
+  }
+}
+
+.step-ac {
+  background: linear-gradient(93.75deg, #84adff 38.23%, #2169f5 95.29%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.step-num::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  padding: 2px;
+  background: linear-gradient(
+    115.9deg,
+    #05374b 1.29%,
+    #95dcf8 46.96%,
+    #023a51 94.49%
+  );
+  border-radius: 50%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.fot-hov {
+  background: #FFFFFF0D;
+  transition: 0.4s ease-in;
+}
+
+.fot-hov:hover{
+  background: linear-gradient(0deg, #0071e3, #0071e3),
+    linear-gradient(0deg, #2169f5, #2169f5);
+}
