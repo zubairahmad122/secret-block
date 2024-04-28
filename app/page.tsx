@@ -1,4 +1,6 @@
-import { homesec4smname, sec2CardData } from "@/constants";
+import ColStepper from "@/components/ColStepper";
+import MarketCard from "@/components/MarketCard";
+import { homesec4smname, marketTodayTitlte, sec2CardData } from "@/constants";
 import Image from "next/image";
 import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -103,9 +105,10 @@ const page = () => {
 
                 {/* you get   */}
                 <div className="flex items-center gap-[6px]">
-
-                <div className="flex-1 sm:w-[257px] flex items-center justify-between py-5 px-2 sm:px-[30px] rounded-[10px] h-[64px] bg-[#00000036] gap-[24px]">
-                    <p className="text-[#FFFFFF6E] w-[55px] smm-text">You got</p>
+                  <div className="flex-1 sm:w-[257px] flex items-center justify-between py-5 px-2 sm:px-[30px] rounded-[10px] h-[64px] bg-[#00000036] gap-[24px]">
+                    <p className="text-[#FFFFFF6E] w-[55px] smm-text">
+                      You got
+                    </p>
 
                     <input
                       type="text"
@@ -142,13 +145,13 @@ const page = () => {
           </div>
         </div>
 
-          <Image
-            src="/images/grlightleft.png"
-            width={400}
-            height={400}
-            alt="btc icon"
-            className="absolute bottom-[-50px] left-0"
-          />
+        <Image
+          src="/images/grlightleft.png"
+          width={400}
+          height={400}
+          alt="btc icon"
+          className="absolute bottom-[-50px] left-0"
+        />
       </section>
 
       {/* cards section  */}
@@ -179,45 +182,102 @@ const page = () => {
         </div>
       </section>
 
-
       {/* logos section  */}
-      <section style={{overflowX:"scroll"}} className="logos-sec no-scrollbar min-w-[300px] overflow-x-scroll  relative z-10 my-20 ">
-        
-          <div className="logos-bg h-full absolute  top-0 left-0 w-full z-0">
-
-          </div>
+      <section
+        style={{ overflowX: "scroll" }}
+        className="logos-sec no-scrollbar min-w-[300px] overflow-x-scroll  relative z-10 my-20 "
+      >
+        <div className="logos-bg h-full min-w-[1100px] absolute  top-0 left-0 w-full z-0"></div>
         <div className="relative z-20  min-w-[900px] sm:min-w-[1050px]   max-w-[1440px] overflow-x-scroll  h-[139px] mx-auto px-5 md:px-[70px] lg::px-[100px] xll::px-[128px] flex items-start py-1 sm:items-center justify-center no-scrollbar gap-10 sm:gap-24 xll:gap-[148px]">
-          <Image src='/logos/solana.svg' width={210} height={31} alt="Solona logo" />
-          <Image src='/logos/polygon.svg' width={172} height={39} alt="Solona logo" />
-          <Image src='/logos/ethereum.svg' width={189} height={48} alt="Solona logo" />
-          <Image src='/logos/xrp.svg' width={169} height={47} alt="Solona logo" />
-          
+          <Image
+            src="/logos/solana.svg"
+            width={210}
+            height={31}
+            alt="Solona logo"
+          />
+          <Image
+            src="/logos/polygon.svg"
+            width={172}
+            height={39}
+            alt="Solona logo"
+          />
+          <Image
+            src="/logos/ethereum.svg"
+            width={189}
+            height={48}
+            alt="Solona logo"
+          />
+          <Image
+            src="/logos/xrp.svg"
+            width={169}
+            height={47}
+            alt="Solona logo"
+          />
         </div>
-
-     
       </section>
 
-
-          <div className="relative z-10 my-20 max-w-[1440px] mx-auto pr-[257px] hidden sm:flex   items-center justify-end">
-            <div className="flex items-center gap-8">
-              {
-                homesec4smname?.map((item) =>(
-                <div key={item.id} className="flex items-center gap-[10px]">
-                  <p className="text-[13px] font-normal text-[#FFFFFF66] tracking-[11.5%]">{item.title}</p>
-                  <Image src='/icons/updwnarr.png' width={19} height={19} alt="Arrow icon" />
-                </div>
-                ))
-              }
+      <div className="relative  z-10 my-20 max-w-[1440px] mx-auto pr-[257px] hidden sm:flex   items-center justify-end">
+        <div className="flex items-center gap-8">
+          {homesec4smname?.map((item) => (
+            <div key={item.id} className="flex items-center gap-[10px]">
+              <p className="text-[13px] font-normal text-[#FFFFFF66] tracking-[11.5%]">
+                {item.title}
+              </p>
+              <Image
+                src="/icons/updwnarr.png"
+                width={19}
+                height={19}
+                alt="Arrow icon"
+              />
             </div>
-          </div>
+          ))}
+        </div>
+      </div>
 
-        {/* cards section  */}
-        <section className="card-sec relative z-10 my-20 max-w-[1440px] mx-auto px-5 md:px-[70px] lg::px-[100px] xll::px-[146px]">
+      {/* Market Today section  */}
+      <section className="card-sec relative z-10 my-20 max-w-[1440px] mx-auto px-5 md:px-[70px] lg:px-[100px] xll:px-[146px]">
         <h2 className="text-center font-semibold text-[36px] ">
-         Market Today
+           Market Today
+          <div className="main flex mt-16 items-center flex-col justify-center">
+            <MarketCard />
+          </div>
         </h2>
-
       </section>
+
+      {/*col  stepper section  */}
+      <section className="card-sec relative z-10 my-36 max-w-[1440px] mx-auto px-[50px] sm:px-[70px] lg:px-[150px] xll:px-[229px]">
+        <h2 className="text-center font-semibold text-[36px] ">
+           How to Use Secretblock.io
+          <div className="main relative flex mt-[125px] items-center  justify-start">
+            <ColStepper />
+          </div>
+        </h2>
+      </section>
+
+
+
+
+          {/* cards section  */}
+          <section className="ready-sec z-20 h-auto lg:min-h-[391px] relative">
+          <div className="redy-bg h-full   absolute  top-0 left-0 w-full  z-0"></div>
+            <div className=" relative z-10 my-20  max-w-[1550px] mx-auto ">
+
+            <div className="flex items-center max-lg:flex-row justify-center w-full flex-wrap">
+
+              <div className="left flex-1 py-10 xll:w-[616px] pl-5 md:pl-[70px] lg::pl-[100px] xll::px-[146px]">
+                <h2 className=" text-[40px] leading-normal xl:text-[48px] font-semibold xl:leading-[70px] ">Ready to start?</h2>
+                <p className=" text-[13px] xl:text-[16px] leading-normal lg:leading-[23px] font-medium mt-[9px] ">Molestie nunc ut egestas faucibus orci porta ultrices proin a. Lectus amet sed aliquam cursus risus. Feugiat aliquam diam adipiscing cursus. In tristique dictum facilisis id.</p>
+                <button className="redy-btn text-[#276DF6] text-[13px] xsm:text-[16px] font-semibold bg-[#FFFFFF1C] py-4 px-[53px] rounded-[50px] relative my-5">Experience Secure Transactions</button>
+              </div>
+
+              <div className="right w-[450px] my xsm:w-full lg:w-[640px] xl:flex-1 h-[300px] xsm:h-[450px] lg:h-[388px] relative">
+                <Image src='/images/tala.png' width={700} height={700} alt="loacker image" className="w-full h-full z-[-2] absolute max-lg:object-[69%] object-center top-0 left-[-10px] lg:left- object-cover" />
+              </div>
+
+            </div>
+            </div>
+      </section>
+
 
 
     </main>

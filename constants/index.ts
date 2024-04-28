@@ -49,3 +49,60 @@ export const homesec4smname = [
     },
 
 ]
+
+
+export const marketTodayTitlte = [
+    {
+        id:1,
+        title:'RANK'
+    },
+    {
+        id:2,
+        title:'NAME'
+    },
+    {
+        id:3,
+        title:'PRICE'
+    },
+    {
+        id:4,
+        title:'MARKET CAP'
+    },
+    {
+        id:5,
+        title:'VOLUME'
+    },
+    {
+        id:6,
+        title:'ALL TIME HIGH'
+    },
+    {
+        id:7,
+        title:'1H'
+    },
+    {
+        id:8,
+        title:'24H'
+    },
+    {
+        id:9,
+        title:'CHART'
+    },
+
+]
+export const mbmarketTodayTitlte = [
+
+    {
+        id:2,
+        title:'NAME'
+    },
+    {
+        id:8,
+        title:'24H'
+    },
+    {
+        id:9,
+        title:'CHART'
+    },
+
+]
