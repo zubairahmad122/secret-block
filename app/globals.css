@@ -70,6 +70,28 @@ border-radius: 20px;
   -webkit-mask-composite: xor;
           mask-composite: exclude; 
 }
+.gr-borderexpended{
+/* border: 1px solid; */
+position: relative;
+top: -25px; 
+z-index: -1; 
+border-radius: 20px; 
+}
+
+.gr-borderexpended::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  border-radius: 20px;
+  padding: 1px; 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.228) 0%, rgba(255, 255, 255, 0.152) 29.9%, rgba(255, 255, 255, 0.124) 57.9%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
 
 .sec2card{
 /* border: 1px solid; */
@@ -260,3 +282,31 @@ margin-top: 31px;
     }
     
     
+
+
+
+
+    /* ---- exch step btn  */
+    
+    .exstep-ac{
+      background: linear-gradient(180deg, #518CFF 0%, #2169F5 100%);
+    }
+    .exstep{
+      background: #213240;
+
+    }
+    .exstep-nx{
+      background-image: url('/images/dotsotb.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+   .xline{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    background-image: url('/images/xline.png');
+    background-size: contain;
+    width: 94%;
+    height: 3px;
+   }
+   

@@ -155,7 +155,22 @@ const page = () => {
       </section>
 
       {/* cards section  */}
-      <section className="card-sec relative z-10 my-20 max-w-[1440px] mx-auto px-5 md:px-[70px] lg::px-[100px] xll::px-[146px]">
+     <main className="relative">
+                <Image
+          src="/images/grlightfull.png"
+          width={700}
+          height={700}
+          alt="btc icon"
+          className="absolute top-[-290px] right-0 z-0 object-cover"
+        />
+                <Image
+          src="/images/grlightfull.png"
+          width={700}
+          height={700}
+          alt="btc icon"
+          className="absolute bottom-[-250px] z-0 left-5 object-cover"
+        />
+     <section className="card-sec relative z-10 my-20 max-w-[1440px] mx-auto px-5 md:px-[70px] lg::px-[100px] xll::px-[146px]">
         <h2 className="text-center font-semibold text-[36px] ">
           Privacy Bridge Protocol
         </h2>
@@ -181,6 +196,7 @@ const page = () => {
           </button>
         </div>
       </section>
+     </main>
 
       {/* logos section  */}
       <section
@@ -235,6 +251,21 @@ const page = () => {
       </div>
 
       {/* Market Today section  */}
+      <section className="relative">
+      <Image
+          src="/images/grlightfull.png"
+          width={700}
+          height={700}
+          alt="btc icon"
+          className="absolute top-[-250px] z-0 right-[-200px] object-cover"
+        />
+      <Image
+          src="/images/grlightfull.png"
+          width={700}
+          height={700}
+          alt="btc icon"
+          className="absolute bottom-[-380px] z-0 left-[-150px] object-cover"
+        />
       <section className="card-sec relative z-10 my-20 max-w-[1440px] mx-auto px-5 md:px-[70px] lg:px-[100px] xll:px-[146px]">
         <h2 className="text-center font-semibold text-[36px] ">
            Market Today
@@ -242,6 +273,7 @@ const page = () => {
             <MarketCard />
           </div>
         </h2>
+      </section>
       </section>
 
       {/*col  stepper section  */}
