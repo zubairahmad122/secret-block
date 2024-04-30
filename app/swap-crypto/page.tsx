@@ -102,11 +102,11 @@ const page = () => {
 
                 {/* send process   */}
                 <div className="flex items-center  h-[64px] justify-end gap-[6px] relative">
-                  <span className="w-[2px] h-[2px] absolute right-[85px] top-0  bg-[#FFFFFF0D]"></span>
-                  <span className="w-[2px] h-[4.4px] absolute right-[85px] top-[6px]  bg-[#FFFFFF0D]"></span>
-                  <span className="w-[2px] h-[4.6px] absolute right-[85px] bottom-[6px]  bg-[#FFFFFF0D]"></span>
-                  <span className="w-[2px] h-[1px] absolute right-[85px] bottom-[13px]  bg-[#FFFFFF0D]"></span>
-                  <span className="w-[2px] h-[2px] absolute right-[85px] bottom-0  bg-[#FFFFFF0D]"></span>
+                  <span className="w-[2px] h-[2px] absolute right-[85px] top-0  bg-[#ffffff1d]"></span>
+                  <span className="w-[2px] h-[4.4px] absolute right-[85px] top-[6px]  bg-[#ffffff1d]"></span>
+                  <span className="w-[2px] h-[4.6px] absolute right-[85px] bottom-[6px]  bg-[#ffffff1d]"></span>
+                  <span className="w-[2px] h-[1px] absolute right-[85px] bottom-[13px]  bg-[#ffffff1d]"></span>
+                  <span className="w-[2px] h-[2px] absolute right-[85px] bottom-0  bg-[#ffffff1d]"></span>
 
                   <div className=" w-[115px] sm:w-[172px]  h-[35px] border border-[#3B7CFB] bg-[#FFFFFF0D] rounded-xl flex items-center justify-center py-2 px-[2px] sm:px-[15px]  ">
                     <p className="text-[#FFFFFF6E] smm-text">
